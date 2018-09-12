@@ -1,10 +1,10 @@
 {{extend 'layout.html'}}
-<h2>{{=' '.join(x.capitalize() for x in request.function.split('_'))}}</h2>
-{{if len(response._vars)==1:}}
-{{=BEAUTIFY(response._vars.values()[0])}}
-{{elif len(response._vars)>1:}}
-{{=BEAUTIFY(response._vars)}}
-{{pass}}
-{{if request.is_local:}}
-{{=response.toolbar()}}
-{{pass}}
+Ask Kevin Parker
+{{=form.custom.begin}}
+{{=form.custom.widget.asked}}
+
+
+.{{=form.custom.submit}}
+{{=form.custom.end}} 
+
+A La Cubierta Project
